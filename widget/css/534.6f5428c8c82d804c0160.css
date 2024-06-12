@@ -8,17 +8,17 @@
   -o-transition: all, 1s;
   transition: all, 1s;
 }
-.legend-table {
+#heatmap-legend-wrapper .legend-table {
   width: 100%;
   table-layout: fixed;
   border-collapse: collapse;
 }
-.legend-row {
+#heatmap-legend-wrapper .legend-table .legend-row {
   padding: 0 0.25em;
   border-top: 1px solid #e7e7e7;
   /* border-bottom: 1px solid #e7e7e7; */
 }
-.legend-row-data {
+#heatmap-legend-wrapper .legend-table .legend-row .legend-row-data {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -28,13 +28,22 @@
   height: 30px;
   font-size: 0.852rem;
 }
-.intensity-label {
-  width: 1em;
-  height: 1em;
+#heatmap-legend-wrapper .legend-table .legend-row .legend-row-data .intensity-label-wrapper {
   display: inline-block;
+  width: 5em;
+  height: 1em;
   margin-right: 0.5em;
 }
-.country-name {
+#heatmap-legend-wrapper .legend-table .legend-row .legend-row-data .intensity-label-wrapper .intensity-label {
+  min-width: 1px;
+  max-width: 100%;
+  height: 1em;
+  display: inline-block;
+  -webkit-transition: width 0.5s ease-in-out;
+  -o-transition: width 0.5s ease-in-out;
+  transition: width 0.5s ease-in-out;
+}
+#heatmap-legend-wrapper .legend-table .legend-row .legend-row-data .country-name {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -43,7 +52,7 @@
   -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
 }
-.legend-empty {
+#heatmap-legend-wrapper .legend-table .legend-row .legend-empty {
   font-style: italic;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
