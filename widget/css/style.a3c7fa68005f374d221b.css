@@ -541,8 +541,6 @@
   min-width: 100px;
   max-width: 100%;
   padding: 0.5em;
-  color: #fff;
-  background-color: #0090D6;
   font-size: 0.823rem;
   border: none;
   border-radius: 3px;
@@ -570,9 +568,11 @@
 }
 #confirmation-dialogue #actions .btn-ok {
   background-color: #E13966 !important;
+  color: #fff !important;
 }
 #confirmation-dialogue #actions .btn-cancel {
   background-color: #a4aab3 !important;
+  color: #fff !important;
 }
 
 #help-dialogue {

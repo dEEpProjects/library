@@ -664,7 +664,6 @@
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  margin-right: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -688,6 +687,7 @@
   -ms-flex: 1;
   flex: 1;
   font-size: 0.823rem;
+  margin: 0 0.5em;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   overflow: hidden;
@@ -695,7 +695,7 @@
   overflow-wrap: break-word;
 }
 #poll-container .question {
-  /* text-align: left; */
+  text-align: left;
   overflow-wrap: break-word;
 }
 #poll-container #poll-answers {
@@ -728,6 +728,13 @@
   text-align: right;
 }
 #poll-container #poll-answers li div.focus-cont .check:focus {
+  outline: 1px solid #53ADD9;
+}
+#poll-container #poll-answers li div.focus-cont .radio {
+  margin: 0 0.5rem 0 0;
+  width: 25px;
+}
+#poll-container #poll-answers li div.focus-cont .radio:focus {
   outline: 1px solid #53ADD9;
 }
 #poll-container #poll-answers li div.focus-cont .text {
@@ -830,6 +837,9 @@
 #poll-container #final-results {
   font-style: italic;
   font-size: 14px;
+}
+#poll-container .btn-open-poll {
+  min-width: auto!important;
 }
 
 .chat-container {
